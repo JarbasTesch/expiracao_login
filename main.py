@@ -2,7 +2,7 @@ from collections import defaultdict
 import pandas as pd
 import funcoes as fcs
 
-df = pd.read_excel(r'C:\Users\tesch\Documents\login_expirar_teste.xlsx')
+df = pd.read_excel('login_expirar_teste.xlsx')
 colaboradores = defaultdict(lambda:{"nome_colaborador": None, "gestores":set(), "data_expiracao": None, "dias_restantes": None, "login": None, "UO": None})
 
 for _, row in df.iterrows():
